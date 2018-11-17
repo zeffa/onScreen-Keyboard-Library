@@ -4,17 +4,17 @@ import android.content.Context;
 import android.support.constraint.ConstraintLayout;
 import android.util.AttributeSet;
 
-public class KeyboardView extends ConstraintLayout {
-    public KeyboardView(Context context) {
+public class CustomKeyboardView extends ConstraintLayout {
+    public CustomKeyboardView(Context context) {
         super(context);
     }
 
-    public KeyboardView(Context context, AttributeSet attrs) {
+    public CustomKeyboardView(Context context, AttributeSet attrs) {
         super(context, attrs);
         initialize(context);
     }
 
-    public KeyboardView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CustomKeyboardView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initialize(context);
     }

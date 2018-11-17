@@ -1,2 +1,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zeffah.onscreenkeyboard" />
+    package="com.zeffah.onscreenkeyboard">
+    <application>
+        <service
+            android:name=".KeyboardProvider"
+            android:label="Keyboard Display Name"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method"/>
+        </service>
+    </application>
+</manifest>
